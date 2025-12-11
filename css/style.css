@@ -12,6 +12,12 @@ body {
     align-items: center;
 }
 
+.illustration {
+    max-width: 100%;
+    border-radius: 30px;
+    margin-bottom: 1.3rem;
+}
+
 /* The Header */
 
 .header {
@@ -20,9 +26,12 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 0 0rem;
-    box-sizing: border-box;
     container-name: header;
     container-type: inline-size;
+}
+
+.header, .footer, main {
+    box-sizing: border-box;
 }
 
 .header h1 {
@@ -35,14 +44,14 @@ body {
     color: #333;
 }
 
-@container header (width < 820px) {
+@container header (width < 680px) {
     .header h1 {
         font-size: 1.4rem
     }
     
 }
 
-@container header (width < 620px) {
+@container header (width < 500px) {
     .header h1 {
         font-size: 1.0rem
     }
@@ -51,7 +60,7 @@ body {
     }
 }
 
-@media screen and (max-width:  820px) {
+@media screen and (max-width: 680px) {
     .header {
         padding: 0 0rem;
     }
@@ -72,12 +81,14 @@ body {
 .main-nav a,
 .previous-next a {
     display: block;
+    min-width: 4em;
     border: 1px solid #333;
     padding: 1rem 2rem;
     background-color: white;
     border-radius: 30px;
-    color: #555;
+    color: #000;
     text-decoration: none;
+    text-align: center;
     font-weight: 600;
 }
 
@@ -116,6 +127,24 @@ main {
     max-width: min(700px, 120vh);
 }
 
+.infos {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .infos {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .infos {
+        font-size: 1rem;
+    }
+}
+
 /* Liste Specimens */
 
 .liste-specimens{
@@ -128,8 +157,8 @@ main {
     justify-content: flex-start;
     font-size: 1.3rem;
 }
-.liste-specimens > li > a {
-    display: block;
+.liste-specimens > li > a,
+.button-link {
     border: 1px solid #333;
     border-radius: 30px;
     background-color: white;
@@ -138,12 +167,20 @@ main {
     align-items: center;
 }
 
-.liste-specimens a {
+.button-link {
+    margin: 2em auto ;
+    width: fit-content;
+    padding: 1rem 2rem;
+}
+
+.liste-specimens a,
+.button-link {
     text-decoration: none;
     color: #000;
     font-weight: 600;
 }
-.liste-specimens a:hover {
+.liste-specimens a:hover,
+.button-link:hover {
     background-color: #755c77;
     color: white;
 }
