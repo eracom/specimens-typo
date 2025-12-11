@@ -101,7 +101,7 @@ body.serie-03 .main-nav li:last-of-type a {
 .header,
 .footer,
 main {
-    max-width: min(1100px, 120vh);
+    max-width: min(700px, 120vh);
 }
 
 /* The Specimen */
