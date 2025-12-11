@@ -203,6 +203,7 @@ main {
 /* the IMG tag */
 .specimen {
     max-width: 100%;
+    display: block
 }
 
 .main-specimen h1 {
