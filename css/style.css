@@ -1,0 +1,208 @@
+body {
+    background-color: #f0f0f0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 1rem 3rem;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The Header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    container-name: header;
+    container-type: inline-size;
+}
+
+.header h1 {
+    margin: 0;
+    align-self: center;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+@container header (width < 820px) {
+    .header h1 {
+        font-size: 1.4rem
+    }
+}
+
+@container header (width < 620px) {
+    .header h1 {
+        font-size: 1.0rem
+    }
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.main-nav a,
+.previous-next a {
+    display: block;
+    border: 1px solid #333;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 30px;
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav a:hover,
+.previous-next a:hover {
+    background-color: #755c77;
+    color: white;
+}
+
+@container header (width < 820px) {
+    .main-nav a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@container header (width < 620px) {
+    .main-nav a {
+        font-size: 0.70rem
+    }
+
+    .main-nav ul {
+        gap: 0.5rem
+    }
+}
+
+body.serie-01 .main-nav li:first-of-type a,
+body.serie-02 .main-nav li:nth-of-type(2) a,
+body.serie-03 .main-nav li:last-of-type a {
+    background-color: #755c77;
+    color: white;
+}
+
+.header,
+.footer,
+main {
+    max-width: min(1100px, 120vh);
+}
+
+/* The Specimen */
+
+.main-specimen {
+    width: 100%;
+    container-name: mainspecimen;
+    container-type: inline-size;
+}
+
+.specimen {
+    max-width: 100%;
+}
+
+.main-specimen h1 {
+    margin: 1rem 2rem 2rem 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+@container mainspecimen (width < 820px) {
+    .main-specimen h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@container mainspecimen (width < 620px) {
+    .main-specimen h1 {
+        font-size: 1.0rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.main-specimen p {
+    text-align: center;
+}
+
+.specimen-author__separator {
+    margin: 0 0.5rem
+}
+
+.previous-next {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous-next a {
+    margin: 1rem 0.6rem;
+    padding: 0.8rem 1.4rem 1rem 1.4rem;
+    font-weight: 500;
+}
+
+.previous-next a:first-child:before {
+    content: "<<";
+    text-decoration: none;
+    padding-right: 0.7rem;
+    font-weight: 400;
+}
+
+.previous-next a:last-child::after {
+    content: ">>";
+    text-decoration: none;
+    padding-left: 0.7rem;
+    font-weight: 400;
+}
+
+.prev-next__separator {
+    visibility: hidden;
+    font-size: 0.3rem;
+}
+
+@container mainspecimen (width < 620px) {
+    .specimen-author {
+        font-size: 0.8rem;
+    }
+    
+    .previous-next a {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.7rem 0.5rem 0.7rem;
+    }
+}
+
+/* The Footer */
+
+footer {
+    background-color: #473d2e;
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+footer h1 {
+    margin-top: 0;
+}
+footer h1 a {
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+}
