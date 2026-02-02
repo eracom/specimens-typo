@@ -173,6 +173,15 @@ main {
     align-items: center;
 }
 
+/*link if disabled*/
+.liste-specimens a[href^="#"] {
+    color: #dadada
+}
+.liste-specimens a[href^="#"]:hover {
+   color: #dadada
+}
+
+
 .button-link {
     margin: 2em auto ;
     width: fit-content;
