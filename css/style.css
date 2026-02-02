@@ -174,10 +174,12 @@ main {
 }
 
 /*link if disabled*/
-.liste-specimens a[href^="#"] {
+.liste-specimens a[href^="#"],
+.previous-next a[href^="#"] {
     color: #dadadaac
 }
-.liste-specimens a[href^="#"]:hover {
+.liste-specimens a[href^="#"]:hover,
+.previous-next a[href^="#"]:hover {
    color: #a593a7ab,
 }
 
