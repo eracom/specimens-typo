@@ -175,10 +175,10 @@ main {
 
 /*link if disabled*/
 .liste-specimens a[href^="#"] {
-    color: #dadada
+    color: #dadadaac
 }
 .liste-specimens a[href^="#"]:hover {
-   color: #dadada
+   color: #a593a7ab,
 }
 
 
