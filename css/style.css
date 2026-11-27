@@ -4,7 +4,7 @@
 :root {
   --black: #333;
   --dark-bg : hsla(0, 0%, 0%, 0.3);
-  --footer-bg: #fff;
+  --footer-bg: hsl(0deg 0% 100% / 85%);
 }
 
 body {
@@ -91,7 +91,7 @@ body {
     min-width: 4em;
     border: 1px solid var(--black);
     padding: 1rem 2rem;
-    background-color: white;
+    background-color: var(--footer-bg);
     border-radius: 30px;
     color: var(--black);
     text-decoration: none;
