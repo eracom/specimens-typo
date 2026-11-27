@@ -4,6 +4,7 @@
 :root {
   --black: #333;
   --dark-bg : #755c77;
+  --footer-bg: #fff;
 }
 
 body {
@@ -298,7 +299,7 @@ main {
 /* The Footer */
 
 footer {
-    background-color: #cca3ff;
+    background-color: var(--footer-bg);
     color: var(--black);
     padding: 2rem;
     border-radius: 20px;
