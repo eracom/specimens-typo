@@ -3,7 +3,7 @@
 /* Variables */
 :root {
   --black: #333;
-  --dark-bg : #755c77;
+  --dark-bg : hsla(0, 0%, 0%, 0.3);
   --footer-bg: #fff;
 }
 
